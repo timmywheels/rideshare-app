@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FC560B986EEF771B7BE731C /* Pods_localtrucks_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA6976980353C9F60A1D0E9 /* Pods_localtrucks_dev.framework */; };
 		DC266F4E220FE1AB00317A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC266F4D220FE1AB00317A3F /* AppDelegate.swift */; };
 		DC266F50220FE1AB00317A3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC266F4F220FE1AB00317A3F /* ViewController.swift */; };
 		DC266F53220FE1AB00317A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC266F51220FE1AB00317A3F /* Main.storyboard */; };
 		DC266F55220FE1AB00317A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC266F54220FE1AB00317A3F /* Assets.xcassets */; };
 		DC266F58220FE1AB00317A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC266F56220FE1AB00317A3F /* LaunchScreen.storyboard */; };
+		DC571D8722105DF80028FDF4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC571D8622105DF80028FDF4 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BC68CE32E0262AFDA99BE12 /* Pods-localtrucks-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localtrucks-dev.release.xcconfig"; path = "Target Support Files/Pods-localtrucks-dev/Pods-localtrucks-dev.release.xcconfig"; sourceTree = "<group>"; };
+		6E750CEDAE83565CA25F21B3 /* Pods-localtrucks-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localtrucks-dev.debug.xcconfig"; path = "Target Support Files/Pods-localtrucks-dev/Pods-localtrucks-dev.debug.xcconfig"; sourceTree = "<group>"; };
+		7CA6976980353C9F60A1D0E9 /* Pods_localtrucks_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_localtrucks_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC266F4A220FE1AB00317A3F /* localtrucks-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "localtrucks-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC266F4D220FE1AB00317A3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC266F4F220FE1AB00317A3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		DC266F54220FE1AB00317A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC266F57220FE1AB00317A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC266F59220FE1AB00317A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC571D8622105DF80028FDF4 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FC560B986EEF771B7BE731C /* Pods_localtrucks_dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0D8441DF6B5A61580B7DFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CA6976980353C9F60A1D0E9 /* Pods_localtrucks_dev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBBEEEC9A52E044A4FFC5B3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E750CEDAE83565CA25F21B3 /* Pods-localtrucks-dev.debug.xcconfig */,
+				1BC68CE32E0262AFDA99BE12 /* Pods-localtrucks-dev.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DC266F41220FE1AA00317A3F = {
 			isa = PBXGroup;
 			children = (
 				DC266F4C220FE1AB00317A3F /* localtrucks-dev */,
 				DC266F4B220FE1AB00317A3F /* Products */,
+				DBBEEEC9A52E044A4FFC5B3E /* Pods */,
+				0D0D8441DF6B5A61580B7DFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,9 @@
 		DC266F4C220FE1AB00317A3F /* localtrucks-dev */ = {
 			isa = PBXGroup;
 			children = (
+				DC571D8522105D800028FDF4 /* Model */,
+				DC571D8322105D660028FDF4 /* View */,
+				DC571D8422105D720028FDF4 /* Controller */,
 				DC266F4D220FE1AB00317A3F /* AppDelegate.swift */,
 				DC266F4F220FE1AB00317A3F /* ViewController.swift */,
 				DC266F51220FE1AB00317A3F /* Main.storyboard */,
@@ -64,6 +93,28 @@
 			path = "localtrucks-dev";
 			sourceTree = "<group>";
 		};
+		DC571D8322105D660028FDF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC571D8622105DF80028FDF4 /* GradientView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DC571D8422105D720028FDF4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DC571D8522105D800028FDF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC266F5C220FE1AB00317A3F /* Build configuration list for PBXNativeTarget "localtrucks-dev" */;
 			buildPhases = (
+				52F6EAFFDC95FA87E445AB97 /* [CP] Check Pods Manifest.lock */,
 				DC266F46220FE1AA00317A3F /* Sources */,
 				DC266F47220FE1AA00317A3F /* Frameworks */,
 				DC266F48220FE1AA00317A3F /* Resources */,
+				875580BB49191A3C51CB12FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +184,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52F6EAFFDC95FA87E445AB97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-localtrucks-dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		875580BB49191A3C51CB12FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-localtrucks-dev/Pods-localtrucks-dev-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-localtrucks-dev/Pods-localtrucks-dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC266F46220FE1AA00317A3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +238,7 @@
 			files = (
 				DC266F50220FE1AB00317A3F /* ViewController.swift in Sources */,
 				DC266F4E220FE1AB00317A3F /* AppDelegate.swift in Sources */,
+				DC571D8722105DF80028FDF4 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +359,7 @@
 		};
 		DC266F5D220FE1AB00317A3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E750CEDAE83565CA25F21B3 /* Pods-localtrucks-dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "localtrucks-dev/Info.plist";
@@ -270,6 +372,7 @@
 		};
 		DC266F5E220FE1AB00317A3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC68CE32E0262AFDA99BE12 /* Pods-localtrucks-dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "localtrucks-dev/Info.plist";
@@ -299,6 +402,7 @@
 				DC266F5E220FE1AB00317A3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
